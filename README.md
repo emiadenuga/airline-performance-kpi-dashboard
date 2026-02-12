@@ -1,6 +1,3 @@
-# airline-performance-kpi-dashboard
-Monitoring delays, cancellations, and reliability trends to support operational decision-making.
-
 # Airline Performance KPI Dashboard (On-Time, Delays, Cancellations)
 
 ## Overview
