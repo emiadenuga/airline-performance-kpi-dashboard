@@ -18,7 +18,6 @@ The objective is to create a KPI reporting layer that supports fast decision-mak
 ## Key Questions
 - Which carriers have the highest delay and cancellation rates?
 - Which airports/routes are most operationally risky?
-- How does on-time performance change by month/season?
 - Where are severe delays most concentrated?
 
 ---
@@ -33,13 +32,11 @@ Source: U.S. DOT / Bureau of Transportation Statistics (BTS) On-Time Performance
 ---
 
 ## KPI Definitions
-- **On-time rate:** % of flights arriving within 15 minutes of scheduled time
+- **Total Flights:** Count of scheduled flights
 - **Delay rate:** % of flights with arrival delay > 15 minutes
 - **Cancellation rate:** % of flights marked cancelled
 - **Avg delay minutes:** average arrival delay minutes (excluding cancellations)
 - **Severe delay rate:** % of flights with delay > 30 (or 60) minutes
-
-(Adjust thresholds in analysis if needed; document changes in `docs/executive_summary.md`.)
 
 ---
 
@@ -50,7 +47,7 @@ Notebook: `notebooks/01_data_preparation.ipynb`
 - Standardizes dates and key fields
 - Handles cancellations/diversions consistently
 - Engineers flags (delayed, severe delay) and route keys
-- Outputs: `/data/processed/airline_performance_clean.csv`
+- Outputs: `/data/processed/daily_kpi.csv`
 
 ### 2) KPI Analysis
 Notebook: `notebooks/02_kpi_analysis.ipynb`
@@ -63,11 +60,7 @@ Notebook: `notebooks/02_kpi_analysis.ipynb`
 Notebook: `notebooks/03_dashboard_metrics_export.ipynb`
 - Produces aggregated tables for BI (monthly KPIs, carrier KPIs, route KPIs)
 - Validates totals and KPI math
-- Exports dashboard-ready files (CSV or tables)
-
-### 4) SQL (Optional)
-File: `sql/kpi_queries.sql`
-- Example aggregation queries used for validation and repeatability
+- Exports dashboard-ready files (CSV)
 
 ---
 
@@ -83,20 +76,36 @@ Suggested dashboard sections:
 
 ---
 
-## Results Summary (Update with your findings)
-- [Add 3–5 bullet insights here once analysis is complete]
+## Results Summary
+Across approximately 6.8 million flights:
+
+- ~20% of flights arrived more than 15 minutes late.
+- Cancellation rates remained relatively low (~1.3%), though winter months showed elevated disruption.
+- Carrier-level analysis revealed meaningful performance variation.
+- Specific routes and origin airports drive disproportionate delay concentration.
+- Seasonal patterns suggest operational strain during peak demand and adverse weather periods.
 
 ---
 
 ## Tools
-- SQL
 - Python (pandas, matplotlib)
 - Tableau or Power BI
+  
+---
+
+## Skills Demonstrated
+
+- Data cleaning and validation
+- Volume-weighted KPI construction
+- Time-series trend analysis
+- Comparative performance analysis
+- Dashboard dataset preparation
+- Business-focused data storytelling
 
 ---
 
 ## Contact
 Emioluwa Adenuga  
 LinkedIn: [add link]  
-Email: [add email]
+Email: [ettisa4641@gmail.com]
 
