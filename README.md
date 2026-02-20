@@ -18,7 +18,8 @@ The objective is to create a KPI reporting layer that supports fast decision-mak
 ## Key Questions
 - Which carriers have the highest delay and cancellation rates?
 - Which airports/routes are most operationally risky?
-- Where are severe delays most concentrated?
+- Where are delays most concentrated?
+- Do disruption patterns vary by season?
 
 ---
 
