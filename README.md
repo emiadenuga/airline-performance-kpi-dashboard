@@ -69,7 +69,6 @@ Notebook: `notebooks/03_dashboard_metrics_export.ipynb`
 
 ## Dashboard
 Link: see `dashboard/dashboard_link.md`  
-Preview images: `/visuals`
 
 ---
 
