@@ -16,10 +16,12 @@ The objective is to create a KPI reporting layer that supports fast decision-mak
 ---
 
 ## Key Questions
-- Which carriers have the highest delay and cancellation rates?
-- Which airports/routes are most operationally risky?
-- Where are delays most concentrated?
-- Do disruption patterns vary by season?
+- Which airlines have the highest delay and cancellation rates?
+- Which routes are most operationally risky?
+- How has on-time performance changed over time?
+- Are delays seasonal or systemic?
+- Which carriers maintain consistent reliability?
+- Where should leadership focus operational improvements first?
 
 ---
 
@@ -69,12 +71,6 @@ Notebook: `notebooks/03_dashboard_metrics_export.ipynb`
 Link: see `dashboard/dashboard_link.md`  
 Preview images: `/visuals`
 
-Suggested dashboard sections:
-- KPI cards (On-time %, Delay %, Cancellation %, Avg delay)
-- Trend line (monthly on-time performance)
-- Carrier comparison
-- Airport/route risk views
-
 ---
 
 ## Results Summary
@@ -90,7 +86,8 @@ Across approximately 6.8 million flights:
 
 ## Tools
 - Python (pandas, matplotlib)
-- Tableau or Power BI
+- Excel
+- Tableau
   
 ---
 
@@ -107,6 +104,6 @@ Across approximately 6.8 million flights:
 
 ## Contact
 Emioluwa Adenuga  
-LinkedIn: [add link]  
+LinkedIn: [https://www.linkedin.com/in/emioluwaadenuga]  
 Email: [ettisa4641@gmail.com]
 
