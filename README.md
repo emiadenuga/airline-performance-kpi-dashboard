@@ -57,7 +57,6 @@ Notebook: `notebooks/02_kpi_analysis.ipynb`
 - Computes KPI snapshots and trends
 - Breaks down performance by carrier/airport/route
 - Identifies risk segments and seasonality
-- Saves key charts to `/visuals`
 
 ### 3) Dashboard Metrics Export
 Notebook: `notebooks/03_dashboard_metrics_export.ipynb`
